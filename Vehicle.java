@@ -3,12 +3,13 @@ public class Vehicle {
     String merk;
     int milesPerGallon;
     
-    //Constructor
+    //Constructor Default
     public Vehicle() {
         merk = "Toyota";
         milesPerGallon = 20;
     }
 
+    //Constructor Parameter
     public Vehicle(String merk, int milesPerGallon) {
         this.merk = merk;
         this.milesPerGallon = milesPerGallon;
@@ -16,4 +17,8 @@ public class Vehicle {
     //getter
     //setter
     //method
+    public void print() {
+        System.out.println("Merk: " + merk);
+        System.out.println("Miles Per Gallon: " + milesPerGallon);
+    }
 }
