@@ -1,7 +1,7 @@
 public class Vehicle {
     //property class
-    String merk;
-    int milesPerGallon;
+    private String merk;
+    private int milesPerGallon;
     
     //Constructor Default
     public Vehicle() {
@@ -14,8 +14,22 @@ public class Vehicle {
         this.merk = merk;
         this.milesPerGallon = milesPerGallon;
     }
-    //getter
-    //setter
+    //getter -->mengambil nilai
+    public String getMerk() {
+        return merk;
+    }
+    public int getMilesPerGallon() {
+        return milesPerGallon;
+    }
+
+    //setter -->mengubah nilai
+    public void setMerk(String merk) {
+        this.merk = merk;
+    }
+    public void setMilesPerGallon(int milesPerGallon) {
+        this.milesPerGallon = milesPerGallon;
+    }
+    
     //method
     public void print() {
         System.out.println("Merk: " + merk);

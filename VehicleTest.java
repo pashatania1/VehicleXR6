@@ -5,5 +5,9 @@ public class VehicleTest {
 
         Vehicle truck = new Vehicle("Mercedes", 15);
         truck.print();
+
+        Vehicle bus = new Vehicle();
+        bus.setMerk("Hino");
+        bus.setMilesPerGallon(100);
     }
 }
