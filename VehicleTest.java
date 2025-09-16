@@ -12,7 +12,17 @@ public class VehicleTest {
         bus.print();
         bus.compare();
 
-        System.out.println(compare1(15, 20));
+        int a = truck.getMilesPerGallon();
+        int b = bus.getMilesPerGallon();
+        int hasil = compare1(a, b);
+        System.out.println(hasil);
+        if(hasil == 1) {
+            System.out.println(truck.getMerk() +" Lebih besar");
+        } else if(hasil==2) {
+            System.out.println(bus.getMerk() +" Lebih besar");
+        } else {
+            System.out.println("Sama besar");
+        }
     }
 
     public static int compare1(int a, int b) {
