@@ -29,10 +29,17 @@ public class Vehicle {
     public void setMilesPerGallon(int milesPerGallon) {
         this.milesPerGallon = milesPerGallon;
     }
-    
+
     //method
     public void print() {
         System.out.println("Merk: " + merk);
         System.out.println("Miles Per Gallon: " + milesPerGallon);
+    }
+
+    public int compare() {
+        if(milesPerGallon > 50) {
+            return 1;
+        }
+        return 0;
     }
 }
