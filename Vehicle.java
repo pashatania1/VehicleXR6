@@ -14,10 +14,12 @@ public class Vehicle {
         this.merk = merk;
         this.milesPerGallon = milesPerGallon;
     }
+    
     //getter -->mengambil nilai
     public String getMerk() {
         return merk;
     }
+
     public int getMilesPerGallon() {
         return milesPerGallon;
     }
@@ -26,6 +28,7 @@ public class Vehicle {
     public void setMerk(String merk) {
         this.merk = merk;
     }
+
     public void setMilesPerGallon(int milesPerGallon) {
         this.milesPerGallon = milesPerGallon;
     }
